@@ -81,8 +81,10 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button className="bg-[#3AAFA9] text-white hover:bg-[#2B7A78]">
-                    Start Your Wellness Journey
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    <Link href="#contact" className="text-white flex items-center">
+                      Start Your Wellness Journey
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -484,6 +486,46 @@ export default function Home() {
                       id="email"
                       placeholder="Enter your email"
                       type="email"
+                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="phone"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Phone Number
+                    </label>
+                    <Input
+                      id="phone"
+                      placeholder="Enter your phone number"
+                      type="tel"
+                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="company"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Company Name
+                    </label>
+                    <Input
+                      id="company"
+                      placeholder="Enter your company name"
+                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="designation"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Designation
+                    </label>
+                    <Input
+                      id="designation"
+                      placeholder="Enter your designation"
                       className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
                     />
                   </div>
