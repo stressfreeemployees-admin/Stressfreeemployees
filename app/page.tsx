@@ -516,6 +516,7 @@ export default function Home() {
                       className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
                     />
                   </div>
+                  {/* Designation field - commented out for now
                   <div className="space-y-2">
                     <label
                       htmlFor="designation"
@@ -529,6 +530,7 @@ export default function Home() {
                       className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
                     />
                   </div>
+                  */}
                   <div className="space-y-2">
                     <label
                       htmlFor="message"
