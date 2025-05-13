@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, CheckCircle, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowRight, CheckCircle, Mail, MapPin, MessageSquare, Phone } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -32,9 +32,18 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <Button className="hidden md:inline-flex bg-[#3AAFA9] text-white hover:bg-[#2B7A78]">
-            Book a Consultation
-          </Button>
+          <div className="hidden md:flex items-center gap-2">
+            <Link href="https://wa.me/919916263165" target="_blank">
+              <Button variant="outline" size="icon" className="border-[#3AAFA9] text-[#3AAFA9] hover:bg-[#3AAFA9] hover:text-white">
+                <MessageSquare className="h-5 w-5" />
+              </Button>
+            </Link>
+            <Button className="bg-[#3AAFA9] text-white hover:bg-[#2B7A78]">
+              <Link href="https://calendly.com/vivek1402/15min" target="_blank" className="text-white">
+                Book a Consultation
+              </Link>
+            </Button>
+          </div>
           <Button variant="outline" size="icon" className="md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -231,6 +240,13 @@ export default function Home() {
                   <p className="text-gray-600">Support the overall mental health of your employees.</p>
                 </div>
               </div>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <div>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Relief from overwhelm & anxiety</h3>
+                  <p className="text-gray-600">Helps your team overcome anxiety and mental overwhelm.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -261,10 +277,15 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold text-[#2B7A78]">Deepa Ramaraj</h3>
-                  <p className="text-[#3AAFA9] font-medium">Life Transformation Coach</p>
+                  <p className="text-[#3AAFA9] font-medium">Partner & Life Transformation Coach</p>
                   <p className="text-gray-600">
-                    Over 12 years facilitating Access Bars®, empowering leadership and HR teams to create joyful,
-                    effective workplaces.
+                    Deepa Ramaraj is Life Transformation Coach for last 12 years.
+                  </p>
+                  <p className="text-gray-600">
+                    Deepa facilitates Corporate Wellness Workshops helping them to de-stress employees, boost sales, to dissolve interpersonal and inter departmental challenges and to transform the way business is done.
+                  </p>
+                  <p className="text-gray-600">
+                    These workshops are totally unconventional in approach and are designed to challenge the fixed points of view and belief that Leadership, Mid-Managers and Employees have bought into.
                   </p>
                 </div>
               </Card>
@@ -280,10 +301,15 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold text-[#2B7A78]">Vivek Agrawal</h3>
-                  <p className="text-[#3AAFA9] font-medium">Head – Sales & Engagement</p>
+                  <p className="text-[#3AAFA9] font-medium">Partner, Head of Sales & Engagement</p>
                   <p className="text-gray-600">
-                    Combines decades of corporate experience with Access Consciousness tools to engage teams and reduce
-                    stress from the top down.
+                    Vivek found himself at life's cross roads in 2024 when his both parents got diagnosed with cancer. Treatment took a toll on entire family and him too at all levels- Physical, Mental, Psychological.
+                  </p>
+                  <p className="text-gray-600">
+                    During this time, he was introduced to Access Consciousness. Practising this technique helped him in handling this difficult period with lot of ease and creating a positive environment.
+                  </p>
+                  <p className="text-gray-600">
+                    He is always playful with Access tools, running them on his both Kids which helped to create greater joy at home.
                   </p>
                 </div>
               </Card>
@@ -372,7 +398,9 @@ export default function Home() {
                 </p>
               </div>
               <Button className="bg-[#3AAFA9] text-white hover:bg-[#2B7A78] px-8 py-6 text-lg">
-                Book a Free Consultation
+                <Link href="https://calendly.com/vivek1402/15min" target="_blank" className="text-white">
+                  Book a Free Consultation
+                </Link>
               </Button>
             </div>
           </div>
@@ -404,7 +432,7 @@ export default function Home() {
                   <Mail className="h-6 w-6 text-[#3AAFA9]" />
                   <div>
                     <h3 className="text-lg font-bold text-[#2B7A78]">Email</h3>
-                    <p className="text-gray-600">deepa.ramaraj@gmail.com</p>
+                    <p className="text-gray-600">hello@stressfreeemployees.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -415,6 +443,17 @@ export default function Home() {
                       Villa 61, Adarsh Palm Retreat,
                       <br />
                       Bellandur, Bangalore 560103
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4">
+                  <MessageSquare className="h-6 w-6 text-[#3AAFA9]" />
+                  <div>
+                    <h3 className="text-lg font-bold text-[#2B7A78]">WhatsApp</h3>
+                    <p className="text-gray-600">
+                      <Link href="https://wa.me/919916263165" target="_blank" className="hover:text-[#3AAFA9] transition-colors">
+                        Chat with us
+                      </Link>
                     </p>
                   </div>
                 </div>
