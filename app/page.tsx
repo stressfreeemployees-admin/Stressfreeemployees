@@ -4,8 +4,7 @@ import { ArrowRight, CheckCircle, Mail, MapPin, MessageSquare, Phone } from "luc
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
+import ContactForm from "@/components/ContactForm"
 
 export default function Home() {
   return (
@@ -460,93 +459,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 gap-4">
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="name"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Name
-                    </label>
-                    <Input
-                      id="name"
-                      placeholder="Enter your name"
-                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="email"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Email
-                    </label>
-                    <Input
-                      id="email"
-                      placeholder="Enter your email"
-                      type="email"
-                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="phone"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Phone Number
-                    </label>
-                    <Input
-                      id="phone"
-                      placeholder="Enter your phone number"
-                      type="tel"
-                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="company"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Company Name
-                    </label>
-                    <Input
-                      id="company"
-                      placeholder="Enter your company name"
-                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
-                    />
-                  </div>
-                  {/* Designation field - commented out for now
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="designation"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Designation
-                    </label>
-                    <Input
-                      id="designation"
-                      placeholder="Enter your designation"
-                      className="border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
-                    />
-                  </div>
-                  */}
-                  <div className="space-y-2">
-                    <label
-                      htmlFor="message"
-                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                    >
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      placeholder="Enter your message"
-                      className="min-h-[120px] border-[#3AAFA9]/30 focus-visible:ring-[#3AAFA9]"
-                    />
-                  </div>
-                </div>
-                <Button className="w-full bg-[#3AAFA9] text-white hover:bg-[#2B7A78]">Send Message</Button>
-              </div>
+              <ContactForm />
             </div>
           </div>
         </section>
