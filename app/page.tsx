@@ -71,11 +71,11 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-[#2B7A78]">
-                    <span className="block">Stress-Free Teams.</span>
-                    <span className="block">Productive Workplaces.</span>
+                    <span className="block">Stress-Free Teams</span>
+                    <span className="block">Productive Workplaces</span>
                   </h1>
                   <p className="max-w-[600px] text-gray-600 md:text-xl">
-                    Corporate wellness programs that bring calm, clarity, and resilience to your team.
+                    Out of the Box corporate wellness programs that bring calm, clarity, and resilience to your team.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -109,7 +109,7 @@ export default function Home() {
                   What We Offer
                 </h2>
                 <p className="max-w-[700px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Comprehensive wellness solutions tailored to your organization's needs
+                  Out of the Box Unconventional Wellness solution tailored to your Organization's needs
                 </p>
               </div>
             </div>
