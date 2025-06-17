@@ -24,9 +24,11 @@ export default function Home() {
             <Link href="#team" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
               Our Team
             </Link>
+            {/* Success Stories link - Commented out for future use
             <Link href="#testimonials" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
               Success Stories
             </Link>
+            */}
             <Link href="#contact" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
               Contact
             </Link>
@@ -162,9 +164,9 @@ export default function Home() {
                     <path d="M2 20h20" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#2B7A78]">Online Training & Webinars</h3>
+                <h3 className="text-xl font-bold text-[#2B7A78]">Online Workshops</h3>
                 <p className="text-gray-600">
-                  Flexible digital solutions that fit into your team's schedule, accessible from anywhere.
+                  Workshop customized specific to clearing the Organization's Blockers.
                 </p>
               </Card>
               <Card className="flex flex-col items-center justify-center space-y-4 p-6 text-center shadow-sm hover:shadow-md transition-shadow rounded-xl border-0 bg-white">
@@ -185,7 +187,7 @@ export default function Home() {
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-[#2B7A78]">1-on-1 Coaching & Access Bars Therapy</h3>
+                <h3 className="text-xl font-bold text-[#2B7A78]">1-on-1 Coaching with latest Wellness tools</h3>
                 <p className="text-gray-600">
                   Personalized support for executives and team members facing specific challenges.
                 </p>
@@ -201,7 +203,7 @@ export default function Home() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#2B7A78]">Benefits</h2>
                 <p className="max-w-[700px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  See the positive impact our programs have on your organization
+                  Positive impact our programs can bring to your Organization
                 </p>
               </div>
             </div>
@@ -258,7 +260,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#2B7A78]">
-                  Meet the Facilitators
+                  Meet the Team
                 </h2>
                 <p className="max-w-[700px] text-gray-600 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Our experienced wellness professionals
@@ -280,7 +282,7 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-[#2B7A78]">Deepa Ramaraj</h3>
                   <p className="text-[#3AAFA9] font-medium">Partner & Life Transformation Coach</p>
                   <p className="text-gray-600">
-                    Deepa Ramaraj is Life Transformation Coach for last 12 years.
+                    Deepa Ramaraj is Life Transformation Coach for last 13 years.
                   </p>
                   <p className="text-gray-600">
                     Deepa facilitates Corporate Wellness Workshops helping them to de-stress employees, boost sales, to dissolve interpersonal and inter departmental challenges and to transform the way business is done.
@@ -318,7 +320,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        {/* Success Stories Section - Commented out for future use
         <section id="testimonials" className="py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -385,6 +387,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        */}
 
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-[#3AAFA9]/10 rounded-3xl mx-4 md:mx-12 my-8">
@@ -466,7 +469,7 @@ export default function Home() {
       </main>
       <footer className="w-full border-t bg-[#E9ECEF] py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-16 md:flex-row px-4 md:px-6">
-          <p className="text-sm text-gray-600">© 2023 Stress Free Employees. All rights reserved.</p>
+          <p className="text-sm text-gray-600">© 2025 Stress Free Employees. All rights reserved.</p>
           <nav className="flex gap-4 sm:gap-6">
             <Link href="#" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
               About
