@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, CheckCircle, Mail, MapPin, MessageSquare, Phone } from "lucide-react"
+import { ArrowRight, CheckCircle, Mail, MapPin, MessageSquare, Phone, Brain, Lightbulb, Lock, Heart, Sparkles, Users, Zap, Youtube, Instagram } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -209,45 +209,51 @@ export default function Home() {
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 mt-12">
               <div className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <Brain className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <div>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Declutter the mind</h3>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Lightbulb className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <div>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Thinking Out of the box</h3>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Lock className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <div>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Dissipate Limiting beliefs</h3>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <MessageSquare className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <div>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Addressing Elephant in the room</h3>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <Heart className="mt-1 h-6 w-6 text-[#3AAFA9]" />
                 <div>
                   <h3 className="text-lg font-bold text-[#2B7A78]">Reduced stress and burnout</h3>
-                  <p className="text-gray-600">Help your team manage pressure and prevent exhaustion.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <Users className="mt-1 h-6 w-6 text-[#3AAFA9]" />
                 <div>
-                  <h3 className="text-lg font-bold text-[#2B7A78]">Improved team communication</h3>
-                  <p className="text-gray-600">Foster better understanding and collaboration among team members.</p>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Greater Communication</h3>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <Sparkles className="mt-1 h-6 w-6 text-[#3AAFA9]" />
                 <div>
-                  <h3 className="text-lg font-bold text-[#2B7A78]">Enhanced leadership clarity</h3>
-                  <p className="text-gray-600">Help leaders make better decisions with a clear, calm mind.</p>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Increased Creativity</h3>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
+                <Zap className="mt-1 h-6 w-6 text-[#3AAFA9]" />
                 <div>
-                  <h3 className="text-lg font-bold text-[#2B7A78]">Better focus and productivity</h3>
-                  <p className="text-gray-600">Improve concentration and output through mindfulness techniques.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
-                <div>
-                  <h3 className="text-lg font-bold text-[#2B7A78]">Greater emotional well-being</h3>
-                  <p className="text-gray-600">Support the overall mental health of your employees.</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="mt-1 h-6 w-6 text-[#3AAFA9]" />
-                <div>
-                  <h3 className="text-lg font-bold text-[#2B7A78]">Relief from overwhelm & anxiety</h3>
-                  <p className="text-gray-600">Helps your team overcome anxiety and mental overwhelm.</p>
+                  <h3 className="text-lg font-bold text-[#2B7A78]">Opening new possibilities</h3>
                 </div>
               </div>
             </div>
@@ -292,8 +298,18 @@ export default function Home() {
                   </p>
                   <p className="text-gray-600">
                     Deepa is a Computer Science Engineer, worked in IT Industry in India and Singapore. She has conducted several corporate training programs across India and abroad. Deepa left a senior management position at IBM to learn and practice energy sciences.
+                  </p>
+                  <p className="text-gray-600">
                     She has co-authored 2 books and has published several articles in renowned International magazines.
                   </p>
+                  <div className="flex justify-center space-x-4 mt-4">
+                    <Link href="https://www.youtube.com/@deeparamaraj6400" target="_blank" rel="noopener noreferrer" className="text-[#3AAFA9] hover:text-[#2B7A78] transition-colors">
+                      <Youtube className="h-8 w-8" />
+                    </Link>
+                    <Link href="https://www.instagram.com/deeparamaraj/" target="_blank" rel="noopener noreferrer" className="text-[#3AAFA9] hover:text-[#2B7A78] transition-colors">
+                      <Instagram className="h-8 w-8" />
+                    </Link>
+                  </div>
                 </div>
               </Card>
               <Card className="flex flex-col items-center space-y-4 p-6 text-center shadow-sm hover:shadow-md transition-shadow rounded-xl border-0 bg-white">
