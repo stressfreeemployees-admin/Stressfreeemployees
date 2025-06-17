@@ -73,7 +73,7 @@ export default function Home() {
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-[#2B7A78]">
-                    <span className="block">Stress-Free Teams</span>
+                    <span className="block">Stress-Free Teams,</span>
                     <span className="block">Productive Workplaces</span>
                   </h1>
                   <p className="max-w-[600px] text-gray-600 md:text-xl">
@@ -289,6 +289,10 @@ export default function Home() {
                   </p>
                   <p className="text-gray-600">
                     These workshops are totally unconventional in approach and are designed to challenge the fixed points of view and belief that Leadership, Mid-Managers and Employees have bought into.
+                  </p>
+                  <p className="text-gray-600">
+                    Deepa is a Computer Science Engineer, worked in IT Industry in India and Singapore. She has conducted several corporate training programs across India and abroad. Deepa left a senior management position at IBM to learn and practice energy sciences.
+                    She has co-authored 2 books and has published several articles in renowned International magazines.
                   </p>
                 </div>
               </Card>
