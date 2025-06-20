@@ -70,31 +70,36 @@ const articles = [
     title: "4 ways to know it's time to ask for more from your job",
     url: "https://theglasshammer.com/2018/08/4-ways-know-time-ask-job/",
     description: "Recognize the signs that you're ready for career growth and learn how to ask for what you deserve.",
-    icon: <TrendingUp className="h-10 w-10 text-[#3AAFA9]" />
+    icon: <TrendingUp className="h-10 w-10 text-[#3AAFA9]" />,
+    source: "The Glass Hammer"
   },
   {
     title: "The basics for creating wealth with ease",
     url: "https://www.thebusinesswomanmedia.com/basics-creating-wealth-ease/",
     description: "Discover foundational principles for shifting your financial reality and building wealth without the struggle.",
-    icon: <DollarSign className="h-10 w-10 text-[#3AAFA9]" />
+    icon: <DollarSign className="h-10 w-10 text-[#3AAFA9]" />,
+    source: "The Business Woman Media"
   },
   {
     title: "Is your body divorcing you?",
     url: "https://www.besteveryou.com/post/is-your-body-divorcing-you",
     description: "Learn to listen to your body's signals and rebuild a harmonious relationship with your physical well-being.",
-    icon: <Activity className="h-10 w-10 text-[#3AAFA9]" />
+    icon: <Activity className="h-10 w-10 text-[#3AAFA9]" />,
+    source: "Best Ever You"
   },
   {
     title: "Steps to work less but earn more",
     url: "https://agelessradianceclub.com/steps-to-working-less-but-earn-more/",
     description: "Implement effective strategies to increase your productivity and income while reclaiming your time and energy.",
-    icon: <BarChart2 className="h-10 w-10 text-[#3AAFA9]" />
+    icon: <BarChart2 className="h-10 w-10 text-[#3AAFA9]" />,
+    source: "Ageless Radiance Club"
   },
   {
     title: "Creating Greater Possibilities With Your Business This Year",
     url: "https://www.smallbizdaily.com/creating-greater-possibilities-with-your-business-this-year/",
     description: "Unlock new potential in your business by asking powerful questions and stepping beyond limitations.",
-    icon: <Rocket className="h-10 w-10 text-[#3AAFA9]" />
+    icon: <Rocket className="h-10 w-10 text-[#3AAFA9]" />,
+    source: "Small Biz Daily"
   }
 ];
 
@@ -511,14 +516,22 @@ export default function Home() {
             <div className="mx-auto grid gap-8 sm:max-w-4xl sm:grid-cols-2 md:grid-cols-3 md:gap-12 lg:max-w-5xl mt-12">
               {articles.map((article) => (
                 <Link href={article.url} target="_blank" key={article.title} className="flex">
-                  <Card className="flex flex-col items-center justify-start space-y-4 p-6 text-center shadow-sm hover:shadow-md transition-shadow rounded-xl border-0 bg-white w-full">
-                    <div className="bg-[#3AAFA9]/20 p-4 rounded-full">
-                      {article.icon}
+                  <Card className="flex flex-col justify-between p-6 text-center shadow-sm hover:shadow-md transition-shadow rounded-xl border-0 bg-white w-full h-full">
+                    <div className="flex flex-col items-center">
+                      <div className="bg-[#3AAFA9]/20 p-4 rounded-full">
+                        {article.icon}
+                      </div>
+                      <h3 className="text-xl font-bold text-[#2B7A78] mt-4">{article.title}</h3>
+                      <p className="text-gray-600 text-sm mt-2">
+                        {article.description}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-bold text-[#2B7A78]">{article.title}</h3>
-                    <p className="text-gray-600 text-sm">
-                      {article.description}
-                    </p>
+                    <div className="mt-4 text-center">
+                      <p className="text-xs text-gray-500 mb-2">
+                        Published on <strong>{article.source}</strong>
+                      </p>
+                      <span className="font-medium text-[#3AAFA9] hover:text-[#2B7A78] transition-colors">Read More &rarr;</span>
+                    </div>
                   </Card>
                 </Link>
               ))}
