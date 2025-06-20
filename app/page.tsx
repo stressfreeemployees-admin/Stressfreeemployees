@@ -127,6 +127,9 @@ export default function Home() {
             <Link href="#team" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
               Our Team
             </Link>
+            <Link href="#articles" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
+              Articles
+            </Link>
             {/* Success Stories link - Commented out for future use
             <Link href="#testimonials" className="text-sm font-medium hover:text-[#3AAFA9] transition-colors">
               Success Stories
