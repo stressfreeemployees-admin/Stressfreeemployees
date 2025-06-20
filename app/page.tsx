@@ -67,6 +67,13 @@ const courses = [
 
 const articles = [
   {
+    title: "A Guide To Wealth Creation",
+    url: "https://www.hr.com/en/magazines/personal_excellence_essentials/february_2019_personal/a-guide-to-wealth-creation_jrrntusu.html?s=fjZ8UKwsDCgyYErbx",
+    description: "Learn practical strategies and mindset shifts to unlock your potential for building and sustaining long-term wealth.",
+    icon: <Lightbulb className="h-10 w-10 text-[#3AAFA9]" />,
+    source: "HR.com"
+  },
+  {
     title: "4 ways to know it's time to ask for more from your job",
     url: "https://theglasshammer.com/2018/08/4-ways-know-time-ask-job/",
     description: "Recognize the signs that you're ready for career growth and learn how to ask for what you deserve.",
